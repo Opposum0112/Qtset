@@ -189,9 +189,8 @@ Enable the included module:
 }
 ```
 
-#### Classic `nix-build` / `nix-shell`:
+#### Classic `nix-shell`:
 ```sh
-nix-build default.nix
 nix-shell
 ```
 
@@ -392,4 +391,3 @@ All 70 automated tests run headlessly in an offscreen Qt environment and verify:
 - **Non-Shell Execution**: External commands are invoked with argument lists (`subprocess.run(argv, shell=False)`), preventing shell injection.
 - **Static Configuration Parsing**: Config values and keybindings are read via Python's `ast.parse` and `ast.literal_eval` without importing or executing arbitrary user code.
 - **Failsafe Backups**: Writes create a timestamped `.backup.<timestamp>` copy alongside the target file before modifying it.
-- **Sanitized Codebase**: Free of hardcoded passwords, personal tokens, private keys, MAC addresses, or personal identifying information.

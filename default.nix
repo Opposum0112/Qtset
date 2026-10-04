@@ -1,6 +1,6 @@
 # ==============================================================================
 # Qtile Settings & Command Center - Classic Nix Derivation
-# Supports nix-build and nix-shell environments on Linux
+# Supports classic nix-shell and Nix environments on Linux
 # ==============================================================================
 { pkgs ? import <nixpkgs> {} }:
 
