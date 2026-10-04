@@ -2,7 +2,7 @@
 
 A modern, comprehensive PySide6 settings center and quick-settings command dashboard for Qtile on X11, styled with a polished Material 3 aesthetic inspired by **DankMaterialShell** and dynamic palettes (**Catppuccin Mocha, Frappe, Latte, Gruvbox Dark, Ayu Dark, GitHub Dark, Solarized Dark**).
 
-Designed specifically for seamless integration with the **Qtile-Con** desktop environment, this application acts as a central **Settings and Session Command Center** with full GUI preferences control and **zero modification to the underlying `Qtile-con` repository**.
+Designed specifically for seamless integration with the **Qtile-Con** desktop environment, this application acts as a central **Settings and Session Command Center** providing intuitive GUI preferences control, dynamic live theme auto-updating, system diagnostics, and hardware management.
 
 <div align="center">
 
@@ -387,7 +387,7 @@ All 70 automated tests run headlessly in an offscreen Qt environment and verify:
 
 ## Security & Architecture
 
-- **Zero Modifications to Qtile-Con Repository**: All settings changes interface with user runtime config directories (`~/.config/qtile/`, `~/.cache/qtile/`). The upstream `Qtile-con` git repository remains 100% clean and untouched.
+- **Non-Destructive User-Space Configuration**: All settings changes cleanly interface with standard user runtime config directories (`~/.config/qtile/`, `~/.cache/qtile/`), ensuring existing environments remain safely isolated and fully portable.
 - **Unprivileged Execution**: The GUI runs strictly under the standard user account; no root permissions or broad `sudoers` rules are required.
 - **Non-Shell Execution**: External commands are invoked with argument lists (`subprocess.run(argv, shell=False)`), preventing shell injection.
 - **Static Configuration Parsing**: Config values and keybindings are read via Python's `ast.parse` and `ast.literal_eval` without importing or executing arbitrary user code.
