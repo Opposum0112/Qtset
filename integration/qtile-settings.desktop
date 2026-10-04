@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Qtile Settings
+GenericName=Settings & Command Center
+Comment=Material 3 settings center and session command dashboard for Qtile
+Exec=qtile-settings
+Icon=preferences-system
+Terminal=false
+Categories=Settings;DesktopSettings;Qt;
+Keywords=qtile;settings;desktop;theme;keybindings;wallpaper;hardware;network;
+StartupNotify=true
+StartupWMClass=qtile-settings

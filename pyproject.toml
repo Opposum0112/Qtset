@@ -1,0 +1,42 @@
+# ==============================================================================
+# Qtile Settings & Command Center - Python Project Configuration
+# Defines build backend, dependencies, CLI entry points, and test/linter settings
+# ==============================================================================
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qtile-settings"
+version = "0.1.0"
+description = "Modern Material 3 and Catppuccin settings center and quick settings for Qtile on X11"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6>=6.6",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.5",
+]
+
+# Command-line entry points installed into the environment PATH
+[project.scripts]
+qtile-settings = "qtile_settings.__main__:main"
+
+# Package discovery pointing to src/ layout
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Pytest test discovery and Python path configuration
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+# Ruff linter formatting standards
+[tool.ruff]
+line-length = 100

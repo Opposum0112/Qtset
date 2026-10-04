@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Caches and tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Distribution and build outputs
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Scratch scripts and temporary test files
+scratch/
+*.backup.*

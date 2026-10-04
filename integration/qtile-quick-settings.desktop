@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Qtile Quick Settings
+GenericName=Quick Settings
+Comment=Compact popup for volume, brightness, theme, and Qtile session controls
+Exec=qtile-settings --quick
+Icon=preferences-system
+Terminal=false
+Categories=Settings;DesktopSettings;Qt;
+Keywords=qtile;quick;settings;volume;brightness;theme;
+StartupNotify=true
+StartupWMClass=qtile-quick-settings
